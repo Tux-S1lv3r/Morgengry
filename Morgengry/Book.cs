@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId { get; set; }
         public string Title { get; set; }
         public double Price { get; set; }
         public Book(string itemId, string title, double price)
         {
-            ItemId = itemId;
+            base.ItemId = itemId;
             Title = title;
             Price = price;
         }

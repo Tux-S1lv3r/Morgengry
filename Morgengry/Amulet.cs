@@ -10,14 +10,13 @@ namespace Morgengry
     {
         low, medium, high
     };
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId { get; set; }
         public string Design { get; set; }
         public Level Quality { get; set; }
         public Amulet(string itemId, Level quality, string design)
         {
-            ItemId = itemId;
+            base.ItemId = itemId;
             Quality = quality;
             Design = design;
         }
